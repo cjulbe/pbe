@@ -11,7 +11,7 @@ try:
         print("Hold a tag near the reader")
         id,text = reader.read()
         id_hex= hex(int(id))
-        print("ID: %s\n" % (id_hex[2:10]))
+        print("ID: %s\n" % (id_hex[2:10]).upper())
         sleep(5)
 except KeyboardInterrupt:
     GPIO.cleanup()
