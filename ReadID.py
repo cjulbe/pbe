@@ -10,11 +10,9 @@ try:
     while True:
         print("Hold a tag near the reader")
         id,text = reader.read()
-        print("ID: %s\n" % (hex(id)))
+        id_hex= hex(int(id))
+        print("ID: %s\n" % (id_hex[2:10]))
         sleep(5)
 except KeyboardInterrupt:
     GPIO.cleanup()
     raise
-
-
-
