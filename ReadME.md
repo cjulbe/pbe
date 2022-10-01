@@ -5,7 +5,8 @@ We need to enable the SPI Interface in order to use the Raspberry Pi since that'
 
 ### Libraries
 For the purpose of this project we will be using the following library: https://github.com/pimylifeup/MFRC522-python.
-To do so, we need to install some other libraries also:
+
+To do so, we need to install these libraries:
 
 `sudo apt install python3-dev python3-pip`
 
