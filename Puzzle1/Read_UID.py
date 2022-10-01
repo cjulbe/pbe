@@ -16,7 +16,7 @@ if __name__ == "__main__":
             print("Hold your card near the reader")
             rf= Rfid_RC522()
             uid= rf.read_uid()
-            print("ID: %s\n" % (uid[2:10]))
+            print("UID: %s\n" % (uid[2:10]))
     except KeyboardInterrupt:
             GPIO.cleanup()
             raise
