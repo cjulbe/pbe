@@ -3,9 +3,9 @@ import os
 import RPi.GPIO as GPIO
 from mfrc522 import *
 
+# define constructor
+reader= SimpleMFRC522()
 class Rfid_RC522:
-    # define constructor
-    reader= SimpleMFRC522()
     # return uid in hex str 
     def read_uid(self):
            id= reader.read_id()
